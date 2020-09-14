@@ -13,5 +13,5 @@ let a = 1
       else if (a % 5 == 0) console.log("Buzz");
       else if (a % 15 == 0) console.log("FizzBazz");
       else console.log(a);
-      a++
+      a++;
     };
