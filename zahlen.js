@@ -13,7 +13,7 @@ for (let i = 0; i < 10; i++) {
 }
 
 // einfache Zahlen
-nextNumber: //metka
+nextNumber: //label
     for (let n = 2; n <= 20; n++) {
       for (let j = 2; j < n; j++) {
         if (n % j == 0) continue nextNumber;
