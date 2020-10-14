@@ -34,3 +34,9 @@ document.write(weekNumber);
     var firstThursday = new Date(new Date(yearOfThursday,0,4).getTime() +(3-((new Date(yearOfThursday,0,4).getDay()+6) % 7)) * 86400000);
     var weekNumber = Math.floor(1 + 0.5 + (currentThursday.getTime() - firstThursday.getTime()) / 86400000/7);
     document.write(weekNumber);
+    
+        IN RUBY VIEL COOLER!
+    KW
+      - time = Time.new 
+      = time.to_date.cweek
+            
