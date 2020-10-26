@@ -1,0 +1,47 @@
+main {
+  margin: 4rem;
+}
+
+.container {
+  margin: 5rem;
+}
+
+.col-text {
+  display: none;
+}
+
+.col-title {
+  position: relative;
+  cursor: pointer;
+  list-style-type: none;
+  padding: 0.2rem 0.5rem;
+}
+
+.col-title:before,
+.col-title:after {
+  content: '';
+  width: 10px;
+  height: 1px;
+  background-color: blue;
+  position: absolute;
+  margin-left: -2rem;
+  margin-top: .5rem;
+}
+
+.col-title::before {
+  transform: rotate(40deg);
+  left: 0;
+}
+
+.col-title::after {
+  transform: rotate(-40deg);
+  left: 7px;
+}
+
+.col-title.active:before {
+  transform: rotate(-40deg);
+}
+
+.col-title.active:after {
+  transform: rotate(40deg);
+}
